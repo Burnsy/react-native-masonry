@@ -7,7 +7,7 @@ export default function Brick(props) {
 	const image = (props.onPress) ? _getTouchableUnit(props, props.gutter) : _getImageTag(props, props.gutter);
 	const footer = (props.renderFooter) ? props.renderFooter(props.data) : null;
 	const header = (props.renderHeader) ? props.renderHeader(props.data) : null;
-	const main = (props.renderHeader) ? props.renderHeader(props.data) : null;
+	const main = (props.renderMain) ? props.renderMain(props.data) : null;
 
 	return (
 		<View key={props.brickKey}>
